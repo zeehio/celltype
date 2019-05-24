@@ -3,6 +3,7 @@
 \name{predict_celltype}
 \alias{predict_celltype}
 \alias{predict_celltype.Seurat}
+\alias{predict_celltype.dgCMatrix}
 \alias{predict_celltype.SingleCellExperiment}
 \alias{predict_celltype.ExpressionSet}
 \alias{predict_celltype.matrix}
@@ -12,6 +13,10 @@ predict_celltype(x, org = "mouse", tissue = NULL, name = "immgen",
   db = NULL, ...)
 
 \method{predict_celltype}{Seurat}(x, org = "mouse", tissue = NULL,
+  name = "immgen", db = NULL, assay.name = "data",
+  gene.col = "symbol", ...)
+
+\method{predict_celltype}{dgCMatrix}(x, org = "mouse", tissue = NULL,
   name = "immgen", db = NULL, assay.name = "data",
   gene.col = "symbol", ...)
 
